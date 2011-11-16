@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  winners: MyString
+  losers: MyString
+  game_id: 1
+  room_id: 1
+  completed_date: 2011-09-01 16:28:20
+  points: 1
+
+two:
+  winners: MyString
+  losers: MyString
+  game_id: 1
+  room_id: 1
+  completed_date: 2011-09-01 16:28:20
+  points: 1

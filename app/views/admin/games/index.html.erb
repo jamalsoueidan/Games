@@ -1,0 +1,10 @@
+<h1>All Games <%= link_to "Create new game", new_admin_game_path %></h1>
+<div class="white-container">
+	<%=render(@games)%>
+</div>
+
+<% if @games.total_pages > 1 %>
+<div class="white-container">
+	<%= will_paginate @games %>
+</div>
+<% end %>

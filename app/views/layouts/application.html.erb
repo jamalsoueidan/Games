@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="<%=t(:direction)%>" lang="<%=default_locale%>" xml:lang="<%=default_locale%>" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title><%=t('domain')%> | <%= @title || "Home"%></title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-language" content="<%=default_locale%>">
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript">
+	    google.load("swfobject", "2.2");
+	</script>
+	
+  	<%= stylesheet_link_tag  'application', default_locale.to_s + '/default', 'form', 'games' %>
+  	<%= javascript_include_tag :all %>
+  	<%= csrf_meta_tag %>
+</head>
+<body>
+
+
+<div class="top">
+	<%= render '/layouts/navigation' %>
+</div>
+
+<div class="content">
+	<%= yield %>
+</div>
+
+<div class="bottom">
+	<div class="left copyright">
+		<%=t('copyright')%>	
+	</div>
+	<div class="right links">
+		<ul class="main">
+			<li><%= link_to t('navigation.home'), root_path %></li>
+			<li><%= link_to t('navigation.games'), s('games_path') %></li>
+			<li><%= link_to t('navigation.help'), s('help_path') %></li>
+			<li><%= link_to t('navigation.about_us'), s('about_us_path') %></li>
+			<% if logged_in? %>
+				<li><%= link_to t('navigation.logout'), s('logout_path') %></li>
+			<% end %>
+			<li><%= link_to t('navigation.translate'), "http://application.net:3000"%></li>
+		</ul>
+	</div>
+</div>
+
+<br /><br />
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+html,body,ul,li,h1,h2,h3 {margin:0;padding:0}
+
+h1, h2, h3, h4 {
+	font-weight:normal;
+	color: #222;
+}
+
+html, body {
+	background:url('/images/background.png') repeat-x #cbeaff;
+	font-family: sans-serif;
+	text-align:center;
+	height:100%;
+}
+
+
+.index-top-image {
+
+
+}
+
+.center-text {
+	text-align:center;
+}
+
+.clear {
+	overflow: hidden;
+	width: 100%;
+}
+
+.top {
+	background:url('/images/top_navi_background.png') repeat-x;
+}
+	#top-center {
+		width:960px;
+		margin:0px auto;
+		overflow:hidden;
+	}
+	
+	.top-content {
+		color:#FFF;
+		background:url('/images/center_navi.png') repeat-x;
+		width:874px;
+		line-height:48px;
+	}
+
+	.top a {color:#FFF;}
+	.top a:hover {color:#FF0040;}
+	
+	ul.providers {overflow:hidden;}
+	.providers li, .main li {list-style:none;}
+
+.content {
+	width:874px;
+	margin:0px auto;
+}
+
+div.login, div.about_us, div.help {
+	width:340px;
+	overflow:hidden;
+}
+	.login a { text-decoration:none;}
+	.login a:hover {color:#FF0040}
+	.login-type {margin:8px;width:80px;text-align:center;}
+
+.activity_text {
+	border-top:1px solid #ECECEC;
+}
+
+	.activity_text .activity {padding:8px 0 5px 0;border-bottom:1px solid #ECECEC;}
+	.activity_text .activity .info {line-height:18px;}
+	.activity_text .activity .avatar_url {margin-right:10px;}
+	
+.activity_image img {
+	border:4px solid #FFF;
+	margin:2px 2px 2px 2px;
+	width:42px;
+	height:42px;
+	overflow:hidden;
+}
+
+.bottom {
+	width:874px;
+	margin:0px auto;
+	/*border-top:1px solid #9fcae3;*/
+	padding-top:20px;
+	font-size:0.8em;
+}
+
+	.copyright {color:#9fcae3;}
+	.bottom .links a {color:#9fcae3;text-decoration:none; }
+	.bottom .links li {padding-left:15px;}
+
+.help_game {width:48%;line-height:22px;}
+
+.flash-container {
+	height:600px;
+	padding:10px;
+	margin:20px 0 20px 0; 
+	background-color:#FFF;
+	overflow:hidden;
+}

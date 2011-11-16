@@ -1,0 +1,10 @@
+en:
+    navigation:
+        home: "Home"
+        login: "Login"
+        logout: "Logout"
+        games: "Games"
+        account: "account"
+        translate: "عربي"
+        help: "Help"
+        about_us: "About us"

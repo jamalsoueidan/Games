@@ -1,0 +1,6 @@
+<%= simple_form_for @user do |f|%>
+	<%=f.input :email %>
+	<%=f.input :nickname %>
+	<%=f.input :fullname %>
+	<%= f.submit 'Save and continue login'%>
+<% end %>

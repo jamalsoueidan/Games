@@ -1,0 +1,24 @@
+<h1><%=@user.nickname%></h1>
+
+<div class="container white-container">
+	<div class="simple_form user">
+		<div class="input select optional"><label class="select optional">Nickname</label><strong><%=@user.nickname%></strong></div>
+		<div class="input select optional"><label class="select optional">Email</label><strong><%=@user.email%></strong></div>
+		<div class="input select optional"><label class="select optional">Created Date</label><strong><%=@user.created_date%></strong></div>
+		<div class="input select optional"><label class="select optional">Logged Date</label><strong><%=distance_of_time_in_words_to_now(@user.logged_date)%></strong></div>
+		<div class="input select optional"><label class="select optional">Signin Cuont</label><strong><%=@user.sign_count%></strong></div>
+		<div class="input select optional"><label class="select optional">Ip</label><strong><%=@user.ip_address%></strong></div>
+	</div>
+	
+	
+<%= simple_form_for [:admin, @user] do |f| %>
+	<hr />
+	<%= f.input :avatar_url %>
+	<%= f.input :status, :as => :select, :collection => [["Standard", User::STANDARD], ["Moderator", User::MODERATOR],["Admin", User::ADMIN]]%>
+	<%= f.input :location, :as => :country %>
+	<%= f.input :vip, :as => :boolean %>
+	<hr />
+	<%= f.submit %> or <%= link_to "Cancel", :back%>
+<% end %>
+
+</div>

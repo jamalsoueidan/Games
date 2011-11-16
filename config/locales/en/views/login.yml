@@ -1,0 +1,9 @@
+en:
+    login:
+        signin: "Sign in to play \nmultiplayer games\n against your friends"
+        facebook: "Facebook"
+        linked_in: "LinkedIn"
+        twitter: "Twitter"
+        openid: "OpenID"
+        google: "Google"
+        yahoo: "Yahoo"

@@ -1,0 +1,10 @@
+ar:
+    navigation:
+        home: "الصفحة الرسمية "
+        login: "دخول"
+        logout: "خروج"
+        games: "ألعاب"
+        account: "ملفي الشخصي"
+        translate: "English"
+        help: "مساعدة"
+        about_us: "من نحن"

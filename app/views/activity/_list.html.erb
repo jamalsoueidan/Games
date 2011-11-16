@@ -1,0 +1,26 @@
+<% if partial == :text %>
+	<div class="white-container">
+		<h2><%=t('activity.recent_activity')%></h2>
+		<div class="activity_text">
+			<%= render :partial => '/activity/text', :collection => @activities[0..4] %>
+		</div>
+	</div>
+
+	<script>
+	function updateActivityList(){
+		// auto load new activity and remove last one from bottom
+		<% unless @activities.empty? %>
+		var last = <%=@activities[@activities.length-1].id %>
+		<% end %>
+	}
+	setInterval( "updateActivityList()", 1000 );
+	</script>
+<% else %>
+<div class="container">
+	<h2>Over 20.000 gamers are already here</h2>
+	<div class="activity_image">
+		<%= render :partial => '/activity/image', :collection => @activities %>
+	</div>
+	<div class="clear"></div>
+</div>
+<% end %>

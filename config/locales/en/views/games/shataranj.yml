@@ -1,0 +1,8 @@
+en:
+    games:
+        shataranj:
+            title: "shataranj"
+            short_description: "Take your battle in Shataranj!"
+            long_description: "Shataranj or Dama2 is a arabic Chess game. Shataranj is a translation name for Chess game in the middle-east, some use the name Dama and other Shataranj, both is equal here. Their is a big difference in the way you play Shataranj and Chess in the west. Visit the url below to learn more."
+            teach: "Learn how to play Shataranj."
+            teach_description: "Chess is a two-player board game played on a chessboard, a square-checkered board with 64 squares arranged in an eight-by-eight grid. It is one of the world's most popular games, played by millions of people worldwide at home.\n\n Each player begins the game with sixteen pieces, Pieces are used to attack and capture the opponent's pieces. The object of the game is to capture all the opponent's peices The endgame is the stage of the game when the opponent has no pieces left on the board. \n\n More about this in the video."

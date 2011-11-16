@@ -1,0 +1,23 @@
+<div id="top-center">
+	<span class="left">
+		<%=image_tag(t('left') + '_navi.png')%>
+	</span>
+	<span class="top-content left">
+		<span class="left"><%=link_to t('domain'), root_path%></span>
+		<ul class="main">
+			<% if logged_in?%>
+				<li class="home <%=t('navigation.home')%>"><%= link_to t('navigation.home'), root_path %></li>
+				<li class="games <%=t('navigation.games')%>"><%= link_to t('navigation.games'), s('games_path') %></li>
+				<li class="help <%=t('navigation.help')%>"><%= link_to t('navigation.help'), s('help_path') %></li>
+				<li class="about_us <%=t('navigation.about_us')%>"><%= link_to t('navigation.about_us'), s('about_us_path') %></li>
+				<li class="logout <%=t('navigation.logout')%>"><%= link_to t('navigation.logout'), s('logout_path') %></li>
+			<% else %>
+				<li><%= link_to t('navigation.translate'), "http://application.net:3000"%></li>
+			<% end %>
+		</ul>
+	</span>
+	<span class="right">
+		<%=image_tag(t('right') + '_navi.png')%>
+	</span>
+</div>
+

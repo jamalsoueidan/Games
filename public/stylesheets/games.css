@@ -1,0 +1,43 @@
+div.games {
+	margin-top:20px;
+	padding:20px 0 20px 10px;
+	overflow:hidden;
+}
+
+div.game img {
+
+}
+
+div.game {
+	width: 270px;
+	text-align:center;
+}
+
+div.game .button_to input {
+	padding:10px;
+	font-size:1.2em;
+}
+
+div.margin {
+	margin:0 15px 0 15px;
+}
+
+div.game h1 {
+	margin-bottom:8px;
+	font-size:1.7em;
+	font-weight:normal;
+}
+
+div.game h1 a {
+	text-decoration:none;
+	color:#000;
+}
+
+div.game p {
+	color: #888;
+	font-size:1em;
+}
+
+h3 a {
+	
+}

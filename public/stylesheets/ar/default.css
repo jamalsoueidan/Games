@@ -1,0 +1,17 @@
+.left {float: right;}
+.right {float: left;}
+.content {text-align:right;}
+.main {float:left;}
+.main li {float:right;}
+.container {text-align:right;}
+.top .main li {font-size:1.1em;padding-right:15px;}
+.providers li {float:right;}
+ul.providers {margin-right:70px;}
+div.game {float:right;}
+
+.container, .transparent-container{margin:20px 0 20px 0;overflow:hidden;}
+.white-container {margin:20px 0 20px 0; padding:10px;background-color:#FFF;overflow:hidden;}
+
+.help h2 {font-size:2.2em; margin:30px 0 0 0;font-weight:bold}
+.about_us h2 {font-size:2.2em; margin:5px 0 0 0;font-weight:bold}
+.login h2 {font-size:2.2em; margin:30px 0 10px 0;font-weight:bold}

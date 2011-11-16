@@ -1,0 +1,9 @@
+ar:
+    login:
+        signin: "ادخول للعب ألعاب متعددة ضد أصدقائك"
+        facebook: "فيسبوك"
+        linked_in: "لنكد إد"
+        twitter: "تويتر"
+        openid: "أبن إد"
+        google: "جوجل"
+        yahoo: "ياهو"

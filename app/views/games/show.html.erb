@@ -1,0 +1,35 @@
+<h1><%= t(@game.translate_title).titleize %></h1>
+
+<% if logged_in? %>
+
+<script type="text/javascript">
+function start_match(room) {
+	console.log(room);
+	reloadSWFObject('/games/<%=@game.name.downcase%>.swf?date=' + Math.floor(Math.random()*10000), 
+					{
+						session:'<%=current_user.session%>', 
+						language:'<%=default_locale%>', 
+						auto_play: 'true',
+						room:'' + room + '', 
+						config:'<%= en_game_path(@game.name)%>.xml'
+					})
+}
+
+var flashvars = {session:'<%=current_user.session%>', room:'lobby', language:'<%=default_locale%>', config:'<%= en_game_path(@game.name)%>.xml'};
+swfobject.embedSWF("/games/lobby.swf", "flash-content", "100%", "100%", "10.2.0", "expressInstall.swf", flashvars);
+</script>
+
+<div class="flash-container">
+	<div id="flash-content">
+		<h1>Alternative content</h1>
+		<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+	</div>
+</div>
+
+<% end %>
+
+<div class="white-container">
+	<h1><%=_(@game, 'title').titleize%></h1>
+	<p><%=_(@game, 'long_description')%></p>
+	<h3><%=_(@game, 'teach')%></h3>
+</div>

@@ -1,0 +1,11 @@
+<div id="activity_<%=text.id%>" class="activity clear">
+	<div class="avatar_url left">
+		<%= image_tag(text.user.avatar_url, :size => "32x32", :border => 1)%>
+	</div>
+	<div class="info left">
+		<div class="message"><%= link_to text.user.nickname, user_path(text.user) %> <%= t text.message%></div>
+		<div class="created_at">
+			<%= distance_of_time_in_words_to_now text.created_at%>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+<div class="white-container">
+	<div class="help_game left">
+		<h1><%= link_to t(help_game.translate_title).titleize, send(default_locale.to_s + '_game_path', t(help_game.translate_title)) %></h1>
+		<p><%= _(help_game, 'teach_description') %></p>
+	</div>
+	<div class="help_game right">
+		<iframe width="410" height="315" src="<%=help_game.youtube_url%>" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>

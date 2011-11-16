@@ -1,0 +1,27 @@
+<div class="container index-top-image clear">
+	<div class="left login">
+		<% if logged_in?%>
+			<h2 class="center-text">Welcome <%= current_user.nickname %></h2>
+			
+			<h3 class="center-text">You are ready to play games, so go straight to <%=link_to "games", games_path %> section</h3>
+		<% else %>
+		
+		<h2 class="center-text"><%=t('login.signin')%></h2>
+
+		<ul class="providers">
+			<li><%=provider_to('twitter') %></li>
+			<li><%=provider_to('facebook') %></li>
+			<li><%=provider_to('yahoo') %></li>
+		</ul>
+		<ul class="providers">
+			<li><%=provider_to('openid') %></li>
+			<li><%=provider_to('google') %></li>
+			<li><%=provider_to('linked_in') %></li>
+		</ul>
+		
+		<% end %>
+	</div>
+	<div class="right">
+		<%=image_tag('sketch.png')%>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<div id="top-center">
+	<span class="left">
+		<%=image_tag(t('left') + '_navi.png')%>
+	</span>
+	<span class="top-content left">
+		<span class="left"><%= link_to t('domain'), root_path%></span>
+		<% if is_admin? %>
+		<ul class="main">
+			<li><%= link_to t('navigation.home'), admin_path %></li>
+			<li><%= link_to t('navigation.games'), admin_games_path %></li>
+			<li><%= link_to t('navigation.users'), admin_users_path %></li>
+			<li><%= link_to t('navigation.logout'), s('logout_path') %></li>
+		</ul>
+		<% end %>
+	</span>
+	<span class="right">
+		<%=image_tag(t('right') + '_navi.png')%>
+	</span>
+</div>

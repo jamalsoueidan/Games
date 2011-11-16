@@ -1,0 +1,35 @@
+To update the CROSS DOMAIN.XML file to only allow some domains.
+
+------------------------------------------------------------------------
+
+Compile CSS files
+./mxmlc /Users/jamalsoueidan/Documents/Adobe\ Flash\ Builder\ 4.5/LobbyFlexApplication/src/assets/styles/ar.css
+./mxmlc /Users/jamalsoueidan/Documents/Adobe\ Flash\ Builder\ 4.5/LobbyFlexApplication/src/assets/styles/en_US.css
+...and move them to public/assets/styles
+
+------------------------------------------------------------------------
+
+http://en.wikipedia.org/wiki/Shatranj
+http://en.wikipedia.org/wiki/Tapa_(game)
+Add website to wikipeadia keywords like backgammon or tawle in arabic.
+
+------------------------------------------------------------------------
+
+upload videos to youtube and show website in the bottom.
+
+------------------------------------------------------------------------
+
+analystic:
+test website without navigation links if user play game or stays longere?
+test website with navigation links if user play game or stays longere?
+
+------------------------------------------------------------------------
+
+EMAIL and PHONE number at about_us section UPDATE THEM
+
+------------------------------------------------------------------------
+
+REMOVE THE random generate number on loading SWF FILE, so we don't use bandwidth all the time
+
+------------------------------------------------------------------------
+

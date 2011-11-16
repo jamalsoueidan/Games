@@ -1,0 +1,15 @@
+<%= simple_form_for [:admin, @game] do |f| %>
+	<%= f.input :name %>
+	<%= f.input :youtube_url%>
+	<%= f.input :custom, :hint => "Keywords for :name parameter" %>
+	<%= f.input :zone %>
+	<%= f.input :host %>
+	<%= f.input :port %>
+	<%= f.input :http_port%>
+	<%= f.input :debug %>
+	<hr class="clear" />
+	<%= f.input :extension_name %>
+	<%= f.input :extension_class %>
+	<hr class="clear" />
+	<%= f.submit %> or <%= link_to "Cancel", :back%>
+<% end %>

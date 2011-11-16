@@ -1,0 +1,8 @@
+<div class="games">
+	<% @i = 0 %>
+	<%= render @games%>
+</div>
+
+<%= render :partial => '/activity/list', :locals => {:partial => :text }%>
+
+<%= render '/main/seo'%>
