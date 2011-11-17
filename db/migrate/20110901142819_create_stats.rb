@@ -3,7 +3,7 @@ class CreateStats < ActiveRecord::Migration
     create_table :stats do |t|
       t.integer :win, :default => 0
       t.integer :loss, :default => 0
-      t.integer :disconnect
+      t.integer :disconnect, :default => 0
       t.integer :points, :default => 1000
       t.belongs_to :game
       t.belongs_to :user
