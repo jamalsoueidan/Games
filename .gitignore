@@ -1,7 +1,13 @@
 .bundle
 db/*.sqlite3
 log/*.log
-tmp/
 public/games/*.swf
 public/images/
 db/schema.rb
+tmp/associations*
+tmp/cache/*
+tmp/nonces/*
+tmp/pids/*
+tmp/sessions/*
+tmp/sockets/*
+tmp/temp/*
