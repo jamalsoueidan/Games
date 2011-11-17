@@ -10,7 +10,7 @@ ul.providers {margin-left:70px;}
 div.game {float:left;}
 
 .container, .transparent-container{margin:20px 0 20px 0;overflow:hidden;}
-.white-container {margin:20px 0 20px 0; padding:10px;background-color:#FFF;}
+.white-container {margin:20px 0 20px 0; padding:10px;background-color:#FFF;overflow:hidden;}
 
 .help h2 {font-size:2.2em; margin:45px 0 20px 0;font-weight:bold}
 .about_us h2 {font-size:2.2em; margin:15px 0 20px 0;font-weight:bold}
