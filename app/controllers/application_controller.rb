@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   
   before_filter :set_locale  
+  before_filter :setup_site_configuration
   helper_method :logged_in?, :current_user, :default_locale
   
   def default_locale
@@ -42,6 +43,10 @@ class ApplicationController < ActionController::Base
   
     def current_user
       @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    end
+    
+    def setup_site_configuration
+      @settings = YAML.load_file(File.join(Rails.root, "config", "settings.yml"))[Rails.env]
     end
   
 end

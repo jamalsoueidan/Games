@@ -15,10 +15,15 @@
 </head>
 <body>
 
-
 <div class="top">
 	<%= render '/layouts/navigation' %>
 </div>
+
+<%- flash.each do |key, msg| -%>
+<div id="<%= key %>" class="content">
+	<h2><%= msg %></h2>
+</div>
+<%- end -%>
 
 <div class="content">
 	<%= yield %>
@@ -37,7 +42,7 @@
 			<% if logged_in? %>
 				<li><%= link_to t('navigation.logout'), s('logout_path') %></li>
 			<% end %>
-			<li><%= link_to t('navigation.translate'), "http://www.yallahel3ab.net"%></li>
+			<li><%= link_to t('navigation.translate'), t('url')%></li>
 		</ul>
 	</div>
 </div>

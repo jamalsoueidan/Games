@@ -92,10 +92,7 @@ div.login, div.about_us, div.help {
 
 .help_game {width:48%;line-height:22px;}
 
-.flash-container {
-	height:600px;
-	padding:10px;
-	margin:20px 0 20px 0; 
-	background-color:#FFF;
-	overflow:hidden;
-}
+#notice { background-color: #A4E7A0; border: 1px solid #26722D; }
+#error { background-color: #F0A8A8; border: 1px solid #900; }
+#notice, #error { padding:10px 10px 10px 10px; }
+#notice h2, #error h2 { color: #000; margin:0; padding:0 }

@@ -3,17 +3,22 @@ class AuthorizeController < ApplicationController
   def create
     auth = request.env["omniauth.auth"]
     user = User.find_with_auth(auth)
-    if user.nil?
-      user = User.new_omniauth(auth)
-      if user.save
-        success_sign_in(user)
+   # if user.nil?
+  #    user = User.new_omniauth(auth)
+      if !@settings['online']
+        flash[:error] = t(:beta_tester)
+        render :text => '<script type="text/javascript"> window.close(); window.opener.location = "' + send('root_path')+ '"; </script>', :layout => false
       else
-        session[:auth] = auth
-        redirect_to new_user_path
+        if user.save
+          success_sign_in(user)
+        else
+          session[:auth] = auth
+          redirect_to new_user_path
+        end
       end
-    else
-      success_sign_in(user)
-    end
+    #else
+    #  success_sign_in(user)
+    #end
   end
 
   def destroy

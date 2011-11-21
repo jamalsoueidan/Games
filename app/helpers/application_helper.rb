@@ -16,6 +16,9 @@ module ApplicationHelper
     text.html_safe
   end
   
+  def any_flash?
+    (!flash[:notice].nil? || !flash[:error].nil?)
+  end
   
   def _(record, field)
     logger.info 'games.' + record.translate + '.' + field
