@@ -1,0 +1,11 @@
+setup socket server
+1. copy SFS2X (zone, extensions, extensions/__lib__) files
+2. remove <allowedRemoteAddresses>...</allowedRemoteAddresses> tag from config/server.xml to allow all ip to access the server admin
+3. setup mysql information in the zone configuration, choose zones and updated (user,password,database)
+
+setup rails
+1. clone app from github
+2. create log directory in the app
+3. create tmp directory and inside directories (pids, cache, etc.)
+4. set correct path to 'tmp/mysql.sock' in the config file
+-- ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock
